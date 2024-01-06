@@ -1,7 +1,7 @@
 import { GithubOutlined } from '@ant-design/icons';
 import { DefaultFooter } from '@ant-design/pro-components';
 const Footer: React.FC = () => {
-  const defaultMessage = '卷聚小分队';
+  const defaultMessage = '卷聚小分队出品';
   const currentYear = new Date().getFullYear();
   return (
     <DefaultFooter
@@ -16,7 +16,8 @@ const Footer: React.FC = () => {
 
         {
           key: 'github',
-          title: <GithubOutlined />,
+          // TS语言把两对象封装在一起
+          title: <><GithubOutlined /> 麻花 GitHub </>,
           href: 'https://github.com/wenyinmahua',
           blankTarget: true,
         },
