@@ -123,6 +123,29 @@ const Register: React.FC = () => {
                   },
                 ]}
               />
+              <ProFormText
+                name="stuId"
+                fieldProps={{
+                  size: 'large',
+                  prefix: <UserOutlined className={styles.prefixIcon} />,
+                }}
+                placeholder={'请输入学号'}
+
+                rules={[
+                  {
+                    required: true,
+                    message: '学号是必填项！',
+                  },
+                  {
+                    min: 10,
+                    message: '学号的长度只能是10！',
+                  },
+                  {
+                    max: 10,
+                    message: '学号的长度只能是10！',
+                  }
+                ]}
+              />
             </>
           )}
           <Link to={"/user/login"}>返回登录</Link>

@@ -70,6 +70,7 @@ declare namespace API {
     userAccount?: string;
     userPassword?: string;
     checkPassword?: string;
+    stuId?: string;
     type?: string;
   };
   type ErrorResponse = {
