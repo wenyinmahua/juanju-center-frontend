@@ -73,6 +73,16 @@ declare namespace API {
     stuId?: string;
     type?: string;
   };
+  /**
+   * 通用返回类
+   */
+  type BaseResponse<T> = {
+    code: number,
+    data: T,
+    message: string,
+    description?: string;
+  }
+
   type ErrorResponse = {
     /** 业务约定的错误码 */
     errorCode: string;

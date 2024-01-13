@@ -62,10 +62,7 @@ const Login: React.FC = () => {
       message.error(defaultLoginFailureMessage);
     }
   };
-  const { status, type: loginType } = userLoginState;
-  // @ts-ignore
-  // @ts-ignore
-  // @ts-ignore
+  // const { status, type: loginType } = userLoginState;
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -84,9 +81,9 @@ const Login: React.FC = () => {
             <Tabs.TabPane key="account" tab={'账户密码登录'} />
           </Tabs>
 
-          {status === 'error' && loginType === 'account' && (
-            <LoginMessage content={'错误的用户名和密码'} />
-          )}
+          {/*{status === 'error' && loginType === 'account' && (*/}
+          {/*  <LoginMessage content={'错误的用户名和密码'} />*/}
+          {/*)}*/}
           {type === 'account' && (
             <>
               <ProFormText

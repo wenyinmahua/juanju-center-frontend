@@ -90,33 +90,33 @@ const columns: ProColumns<API.CurrentUser>[] = [
   {
     title: '学号',
     dataIndex: 'stuId',
-    copyable: true,
+    // copyable: true,
   },
-  {
-    disable: true,
-    title: '状态',
-    dataIndex: 'state',
-    filters: true,
-    onFilter: true,
-    ellipsis: true,
-    valueType: 'select',
-    valueEnum: {
-      all: { text: '超长'.repeat(50) },
-      open: {
-        text: '未解决',
-        status: 'Error',
-      },
-      closed: {
-        text: '已解决',
-        status: 'Success',
-        disabled: true,
-      },
-      processing: {
-        text: '解决中',
-        status: 'Processing',
-      },
-    },
-  },
+  // {
+  //   disable: true,
+  //   title: '状态',
+  //   dataIndex: 'state',
+  //   filters: true,
+  //   onFilter: true,
+  //   ellipsis: true,
+  //   valueType: 'select',
+  //   valueEnum: {
+  //     all: { text: '超长'.repeat(50) },
+  //     open: {
+  //       text: '未解决',
+  //       status: 'Error',
+  //     },
+  //     closed: {
+  //       text: '已解决',
+  //       status: 'Success',
+  //       disabled: true,
+  //     },
+  //     processing: {
+  //       text: '解决中',
+  //       status: 'Processing',
+  //     },
+  //   },
+  // },
   // {
   //   disable: true,
   //   title: '标签',
